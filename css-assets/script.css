@@ -1,0 +1,179 @@
+/* Overall page styling */
+body {
+    font-family: 'Georgia', serif;       /* Elegant, slightly rustic font for boho feel */
+    background-color: #fff8f0;           /* Warm cream background */
+    margin: 0;
+    padding: 0;
+    color: #4b3f2f;                       /* Dark brown text */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Navigation menu styling */
+ul.nav {
+    list-style-type: none;               /* Remove bullets for nav */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft gradient background */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+ul.nav li {
+    display: inline-block;               /* Horizontal menu items */
+}
+
+ul.nav li a {
+    display: block;
+    color: #4b3f2f;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul.nav li a:hover {
+    background-color: #f7d6aa;           /* Warm hover color */
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Headings styling */
+h1, h2, h3 {
+    margin: 20px 0;
+    color: #7b5e57;                      /* Earthy brown for headings */
+    font-family: 'Palatino Linotype', serif;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #4b3f2f;
+}
+
+/* Strong text for emphasis */
+strong {
+    color: #d9864a;                      /* Warm orange for emphasis */
+}
+
+/* Ordered lists for content */
+ol.content-list {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(247,232,208,0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);    /* Center the numbers and text */
+    display: table;            /* Treat list as a block table */
+    margin: 20px auto;         /* Center the entire block */
+    padding: 0;                /* Remove default padding */
+    list-style-position: inside; /* Make numbers part of text flow */
+    text-align: center;    
+    
+}
+
+ol.content-list li {
+    margin-bottom: 10px;       /* Space between items */
+}
+
+/* Unordered lists for content */
+ul.content-list {
+    display: block;
+    list-style-type: disc;                /* Bullet points */
+    padding-left: 40px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+ul.content-list li {
+    margin-bottom: 8px;
+}
+
+/* Table styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(217,193,178,0.3);
+}
+
+th, td {
+    border: 1px solid #7b5e57;
+    padding: 10px;
+    color: #4b3f2f;
+}
+
+th {
+    background-color: #d9c1b2;
+}
+
+/* Images styling */
+img {
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Figure caption styling */
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    color: #7b5e57;
+}
+
+/* Container for content blocks */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(247,232,208,0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 80%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #d9c1b2;
+    background-color: #fff5ed;
+    color: #4b3f2f;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #d9864a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f7d6aa;
+}
+
+/* Links styling */
+a {
+    color: #d9864a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
