@@ -1,179 +1,176 @@
-/* Overall page styling */
+/* ================= Overall page styling ================= */
 body {
-    font-family: 'Georgia', serif;       /* Elegant, slightly rustic font for boho feel */
-    background-color: #fff8f0;           /* Warm cream background */
-    margin: 0;
-    padding: 0;
-    color: #4b3f2f;                       /* Dark brown text */
-    text-align: center;
-    line-height: 1.6;
+    font-family: 'Georgia', serif;       /* Sets the main font to Georgia, giving a slightly rustic, boho feel */
+    background-color: #fff8f0;           /* Warm cream background for a soft, welcoming page tone */
+    margin: 0;                            /* Remove default margin around the page */
+    padding: 0;                           /* Remove default padding */
+    color: #4b3f2f;                       /* Dark brown text color for readability and boho aesthetic */
+    text-align: center;                   /* Center-align text content by default */
+    line-height: 1.6;                     /* Increase line spacing for readability */
 }
 
-/* Navigation menu styling */
+/* ================= Navigation menu styling ================= */
 ul.nav {
-    list-style-type: none;               /* Remove bullets for nav */
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft gradient background */
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    list-style-type: none;               /* Remove default bullet points for nav items */
+    margin: 0;                            /* Remove default margin */
+    padding: 0;                           /* Remove default padding */
+    background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft horizontal gradient for nav background */
+    overflow: hidden;                     /* Prevent floating issues */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow for depth */
 }
 
 ul.nav li {
-    display: inline-block;               /* Horizontal menu items */
+    display: inline-block;               /* Arrange nav items horizontally */
 }
 
 ul.nav li a {
-    display: block;
-    color: #4b3f2f;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    display: block;                       /* Make anchor occupy entire list item for easier clicking */
+    color: #4b3f2f;                       /* Nav link text color */
+    text-decoration: none;                /* Remove underline from links */
+    padding: 14px 20px;                   /* Add spacing around text for clickable area */
+    font-weight: bold;                     /* Bold text for prominence */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
 }
 
 ul.nav li a:hover {
-    background-color: #f7d6aa;           /* Warm hover color */
-    color: #fff;
-    border-radius: 8px;
+    background-color: #f7d6aa;           /* Warm color on hover for visual feedback */
+    color: #fff;                          /* Change text to white on hover */
+    border-radius: 8px;                   /* Rounded corners for hovered link */
 }
 
-/* Headings styling */
+/* ================= Headings styling ================= */
 h1, h2, h3 {
-    margin: 20px 0;
-    color: #7b5e57;                      /* Earthy brown for headings */
-    font-family: 'Palatino Linotype', serif;
+    margin: 20px 0;                       /* Add vertical spacing above and below headings */
+    color: #7b5e57;                       /* Earthy brown color for headings */
+    font-family: 'Palatino Linotype', serif; /* Secondary serif font for headings */
 }
 
-/* Paragraph styling */
+/* ================= Paragraph styling ================= */
 p {
-    font-size: 18px;
-    margin: 15px 0;
-    color: #4b3f2f;
+    font-size: 18px;                      /* Slightly larger font for readability */
+    margin: 15px 0;                       /* Vertical spacing between paragraphs */
+    color: #4b3f2f;                       /* Match text color of body */
 }
 
-/* Strong text for emphasis */
+/* ================= Emphasis styling ================= */
 strong {
-    color: #d9864a;                      /* Warm orange for emphasis */
+    color: #d9864a;                      /* Warm orange for highlighted text */
 }
 
-/* Ordered lists for content */
+/* ================= Ordered lists for content ================= */
 ol.content-list {
-    width: 80%;
-    margin: 20px auto;
-    background-color: rgba(247,232,208,0.6);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);    /* Center the numbers and text */
-    display: table;            /* Treat list as a block table */
-    margin: 20px auto;         /* Center the entire block */
-    padding: 0;                /* Remove default padding */
-    list-style-position: inside; /* Make numbers part of text flow */
-    text-align: center;    
-    
+    width: 80%;                           /* Limit width to 80% of container */
+    margin: 20px auto;                    /* Center the list horizontally with vertical spacing */
+    background-color: rgba(247,232,208,0.6); /* Light semi-transparent background */
+    padding: 20px;                        /* Inner spacing */
+    border-radius: 12px;                  /* Rounded corners for soft look */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    display: table;                       /* Treat list as a block table to help with centering */
+    list-style-position: inside;           /* Numbers are part of text flow */
+    text-align: center;                    /* Center numbers and text */
 }
 
 ol.content-list li {
-    margin-bottom: 10px;       /* Space between items */
+    margin-bottom: 10px;                  /* Space between list items */
 }
 
-/* Unordered lists for content */
+/* ================= Unordered lists for content ================= */
 ul.content-list {
-    display: block;
-    list-style-type: disc;                /* Bullet points */
-    padding-left: 40px;
-    margin: 10px auto;
-    text-align: left;
+    display: block;                        /* Standard block display */
+    list-style-type: disc;                 /* Bullet points for unordered list */
+    padding-left: 40px;                    /* Indent bullets from left */
+    margin: 10px auto;                     /* Vertical spacing and centered block */
+    text-align: left;                      /* Keep text left-aligned */
 }
 
 ul.content-list li {
-    margin-bottom: 8px;
+    margin-bottom: 8px;                    /* Space between items */
 }
 
-/* Table styling */
+/* ================= Table styling ================= */
 table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 80%;
-    background-color: rgba(217,193,178,0.3);
+    margin: 20px auto;                     /* Center table with vertical spacing */
+    border-collapse: collapse;             /* Merge table borders */
+    width: 80%;                            /* Table width */
+    background-color: rgba(217,193,178,0.3); /* Light semi-transparent table background */
 }
 
 th, td {
-    border: 1px solid #7b5e57;
-    padding: 10px;
-    color: #4b3f2f;
+    border: 1px solid #7b5e57;            /* Border around table cells */
+    padding: 10px;                         /* Space inside cells */
+    color: #4b3f2f;                        /* Text color */
 }
 
 th {
-    background-color: #d9c1b2;
+    background-color: #d9c1b2;            /* Slightly darker background for headers */
 }
 
-/* Images styling */
+/* ================= Images styling ================= */
 img {
-    border-radius: 12px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;                   /* Rounded corners for images */
+    margin: 10px 0;                        /* Vertical spacing around images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
-/* Figure caption styling */
+/* ================= Figure captions ================= */
 figcaption {
-    font-style: italic;
-    margin-top: 5px;
-    color: #7b5e57;
+    font-style: italic;                     /* Italic style for captions */
+    margin-top: 5px;                        /* Space above caption */
+    color: #7b5e57;                         /* Matching earthy color */
 }
 
-/* Container for content blocks */
+/* ================= Container for content blocks ================= */
 .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: rgba(247,232,208,0.6);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 80%;                            /* Set content block width */
+    margin: 20px auto;                     /* Center block with vertical spacing */
+    background-color: rgba(247,232,208,0.6); /* Soft semi-transparent background */
+    padding: 20px;                         /* Inner spacing */
+    border-radius: 12px;                   /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Shadow for subtle depth */
 }
 
-/* Form styling */
+/* ================= Form styling ================= */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px auto;
-    width: 80%;
+    display: flex;                         /* Use flexbox for form layout */
+    flex-direction: column;                /* Arrange form elements vertically */
+    align-items: flex-start;               /* Align elements to left */
+    margin: 20px auto;                     /* Center form horizontally with spacing */
+    width: 80%;                            /* Form width */
 }
 
 input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #d9c1b2;
-    background-color: #fff5ed;
-    color: #4b3f2f;
-    font-size: 16px;
+    width: 100%;                            /* Full width of form container */
+    padding: 12px;                          /* Inner spacing for inputs */
+    margin-top: 5px;                        /* Space above input */
+    margin-bottom: 15px;                    /* Space below input */
+    border-radius: 8px;                     /* Rounded corners */
+    border: 1px solid #d9c1b2;             /* Border color matching theme */
+    background-color: #fff5ed;              /* Light background */
+    color: #4b3f2f;                         /* Input text color */
+    font-size: 16px;                        /* Slightly larger font */
 }
 
 button {
-    padding: 12px 24px;
-    background-color: #d9864a;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 12px 24px;                     /* Button padding */
+    background-color: #d9864a;              /* Warm orange button color */
+    color: #fff;                             /* White text on button */
+    border: none;                            /* Remove default border */
+    border-radius: 8px;                      /* Rounded corners */
+    cursor: pointer;                         /* Cursor shows clickable hand */
+    font-weight: bold;                        /* Bold text for emphasis */
+    transition: background-color 0.3s;       /* Smooth hover transition */
 }
 
 button:hover {
-    background-color: #f7d6aa;
+    background-color: #f7d6aa;              /* Lighter hover color for button */
 }
 
-/* Links styling */
+/* ================= Links styling ================= */
 a {
-    color: #d9864a;
-    text-decoration: none;
+    color: #d9864a;                         /* Main link color matching theme */
+    text-decoration: none;                  /* Remove underline by default */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;             /* Underline on hover for visual cue */
 }

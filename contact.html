@@ -24,18 +24,53 @@
       <p><strong>Phone:</strong> +27 82 123 4567</p>
 
       <h2>Send Us a Message</h2>
-      <form>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+     <!-- Start of the form -->
+<form>
+    <!-- Label for the name input field -->
+    <label for="name">Name:</label><br>  
+    <!-- Text input field for user's name -->
+    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+    <!-- 
+        type="text" → allows user to enter text 
+        id="name" → unique identifier for this input, links to the label
+        name="name" → name used when submitting form data
+        placeholder="Your Name" → hint text inside input
+        required → ensures user must fill out this field before submitting
+        <br><br> → adds line breaks for spacing
+    -->
 
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+    <!-- Label for the email input field -->
+    <label for="email">Email:</label><br>  
+    <!-- Input field for user's email -->
+    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+    <!-- 
+        type="email" → ensures input follows email format (example: user@example.com)
+        id="email" → links label to this field
+        name="email" → used when form is submitted
+        placeholder="Your Email" → hint for user
+        required → cannot submit form without entering an email
+    -->
 
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><br><br>
+    <!-- Label for the message textarea -->
+    <label for="message">Message:</label><br>  
+    <!-- Multi-line textarea for user to type a message -->
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><br><br>
+    <!-- 
+        id="message" → links label to this textarea
+        name="message" → used when submitting form
+        rows="5" → sets the height of textarea to 5 lines
+        placeholder="Write your message..." → shows hint text
+        required → user must enter text before submitting
+    -->
 
-          <button type="submit">Send Message</button>
-      </form>
+    <!-- Submit button for the form -->
+    <button type="submit">Send Message</button>
+    <!-- 
+        type="submit" → clicking this button sends the form data to the server
+    -->
+</form>
+<!-- End of the form -->
+
   </div>
 </body>
 
