@@ -1,15 +1,15 @@
-/* ================= Overall page styling ================= */
+/* Overall page styling */
 body {
     font-family: 'Georgia', serif;       /* Sets the main font to Georgia, giving a slightly rustic, boho feel */
     background-color: #fff8f0;           /* Warm cream background for a soft, welcoming page tone */
     margin: 0;                            /* Remove default margin around the page */
     padding: 0;                           /* Remove default padding */
-    color: #4b3f2f;                       /* Dark brown text color for readability and boho aesthetic */
+    color: #4b3f2f;                      /* Dark brown text color for readability and boho aesthetic */
     text-align: center;                   /* Center-align text content by default */
     line-height: 1.6;                     /* Increase line spacing for readability */
 }
 
-/* ================= Navigation menu styling ================= */
+/*Navigation menu styling */
 ul.nav {
     list-style-type: none;               /* Remove default bullet points for nav items */
     margin: 0;                            /* Remove default margin */
@@ -38,26 +38,26 @@ ul.nav li a:hover {
     border-radius: 8px;                   /* Rounded corners for hovered link */
 }
 
-/* ================= Headings styling ================= */
+/* Headings styling */
 h1, h2, h3 {
     margin: 20px 0;                       /* Add vertical spacing above and below headings */
     color: #7b5e57;                       /* Earthy brown color for headings */
     font-family: 'Palatino Linotype', serif; /* Secondary serif font for headings */
 }
 
-/* ================= Paragraph styling ================= */
+/* Paragraph styling */
 p {
     font-size: 18px;                      /* Slightly larger font for readability */
     margin: 15px 0;                       /* Vertical spacing between paragraphs */
     color: #4b3f2f;                       /* Match text color of body */
 }
 
-/* ================= Emphasis styling ================= */
+/*  Emphasis styling */
 strong {
     color: #d9864a;                      /* Warm orange for highlighted text */
 }
 
-/* ================= Ordered lists for content ================= */
+/* Ordered lists for content  */
 ol.content-list {
     width: 80%;                           /* Limit width to 80% of container */
     margin: 20px auto;                    /* Center the list horizontally with vertical spacing */
@@ -74,7 +74,7 @@ ol.content-list li {
     margin-bottom: 10px;                  /* Space between list items */
 }
 
-/* ================= Unordered lists for content ================= */
+/* Unordered lists for content  */
 ul.content-list {
     display: block;                        /* Standard block display */
     list-style-type: disc;                 /* Bullet points for unordered list */
@@ -119,8 +119,8 @@ figcaption {
     color: #7b5e57;                         /* Matching earthy color */
 }
 
-/* ================= Container for content blocks ================= */
-.container {
+/* Container for content blocks */
+div.container {
     width: 80%;                            /* Set content block width */
     margin: 20px auto;                     /* Center block with vertical spacing */
     background-color: rgba(247,232,208,0.6); /* Soft semi-transparent background */
@@ -129,7 +129,7 @@ figcaption {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Shadow for subtle depth */
 }
 
-/* ================= Form styling ================= */
+/*Form styling */
 form {
     display: flex;                         /* Use flexbox for form layout */
     flex-direction: column;                /* Arrange form elements vertically */
@@ -165,7 +165,7 @@ button:hover {
     background-color: #f7d6aa;              /* Lighter hover color for button */
 }
 
-/* ================= Links styling ================= */
+/*Links styling */
 a {
     color: #d9864a;                         /* Main link color matching theme */
     text-decoration: none;                  /* Remove underline by default */
