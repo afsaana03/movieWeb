@@ -1,33 +1,33 @@
 /* Overall page styling */
 body {
     font-family: 'Georgia', serif;       /* Sets the main font to Georgia, giving a slightly rustic, boho feel */
-    background-color: #fff8f0;           /* Warm cream background for a soft, welcoming page tone */
-    margin: 0;                            /* Remove default margin around the page */
-    padding: 0;                           /* Remove default padding */
-    color: #4b3f2f;                      /* Dark brown text color for readability and boho aesthetic */
-    text-align: center;                   /* Center-align text content by default */
-    line-height: 1.6;                     /* Increase line spacing for readability */
+    background-color: #fff8f0;     /* Warm cream background for a soft, welcoming page tone */
+    margin: 0;                          /* Remove default margin around the page */
+    padding: 0;                        /* Remove default padding */
+    color: #4b3f2f;              /* Dark brown text color for readability and boho aesthetic */
+    text-align: center;                 /* Center-align text content by default */
+    line-height: 1.6;              /* Increase line spacing for readability */
 }
 
 /*Navigation menu styling */
 ul.nav {
-    list-style-type: none;               /* Remove default bullet points for nav items */
-    margin: 0;                            /* Remove default margin */
-    padding: 0;                           /* Remove default padding */
+    list-style-type: none;              /* Remove default bullet points for nav items */
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                   /* Remove default padding */
     background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft horizontal gradient for nav background */
     overflow: hidden;                     /* Prevent floating issues */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow for depth */
 }
 
 ul.nav li {
-    display: inline-block;               /* Arrange nav items horizontally */
+    display: inline-block;             /* Arrange nav items horizontally */
 }
 
 ul.nav li a {
-    display: block;                       /* Make anchor occupy entire list item for easier clicking */
-    color: #4b3f2f;                       /* Nav link text color */
-    text-decoration: none;                /* Remove underline from links */
-    padding: 14px 20px;                   /* Add spacing around text for clickable area */
+    display: block;                    /* Make anchor occupy entire list item for easier clicking */
+    color: #4b3f2f;                     /* Nav link text color */
+    text-decoration: none;          /* Remove underline from links */
+    padding: 14px 20px;                 /* Add spacing around text for clickable area */
     font-weight: bold;                     /* Bold text for prominence */
     transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
 }
@@ -87,7 +87,7 @@ ul.content-list li {
     margin-bottom: 8px;                    /* Space between items */
 }
 
-/* ================= Table styling ================= */
+/* Table styling */
 table {
     margin: 20px auto;                     /* Center table with vertical spacing */
     border-collapse: collapse;             /* Merge table borders */
@@ -105,14 +105,14 @@ th {
     background-color: #d9c1b2;            /* Slightly darker background for headers */
 }
 
-/* ================= Images styling ================= */
+/* Images styling */
 img {
     border-radius: 12px;                   /* Rounded corners for images */
     margin: 10px 0;                        /* Vertical spacing around images */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
-/* ================= Figure captions ================= */
+/* Figure captions */
 figcaption {
     font-style: italic;                     /* Italic style for captions */
     margin-top: 5px;                        /* Space above caption */

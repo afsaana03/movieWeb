@@ -1,0 +1,54 @@
+body {
+    font-family: 'Georgia', serif;       /* Sets the main font to Georgia */
+    background-color: #fff8f0;     /* Warm cream background for a soft, welcoming page tone */
+    margin: 0;                          /* Remove default margin around the page */
+    padding: 0;                        /* Remove default padding */
+    text-align: center;                 /* Center-align text content by default */
+  
+}
+
+ul.nav {
+    list-style-type: none;              /* Remove default bullet points for nav items */
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                   /* Remove default padding */
+    background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft horizontal gradient for nav background */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
+ul.nav li {
+    display: inline-block;             /* Arrange nav items horizontally */
+}
+
+ul.nav li a {
+    display: block;                    /* Make anchor occupy entire list item for easier clicking */
+    color: #4b3f2f;                     /* Nav link text color */
+    text-decoration: none;          /* Remove underline from links */
+    padding: 14px 20px;                 /* Add spacing around text for clickable area */
+    font-weight: bold;                     /* Bold text for prominence */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+ul.nav li a:hover {
+    background-color: #f7d6aa;           /* Warm color on hover for visual feedback */
+    color: #fff;                          /* Change text to white on hover */
+    border-radius: 8px;                   /* Rounded corners for hovered link */
+}
+
+/* Headings styling */
+h1, h2, h3 {
+    margin: 20px 0;                       /* Add vertical spacing above and below headings */
+    color: #7b5e57;                       /* Earthy brown color for headings */
+    font-family: 'Palatino Linotype', serif; /* Secondary serif font for headings */
+}
+
+ul.content-list {
+    display: block;                        /* Standard block display */
+    list-style-type: disc;                 /* Bullet points for unordered list */
+    padding-left: 40px;                    /* Indent bullets from left */
+    margin: 10px auto;                     /* Vertical spacing and centered block */
+    text-align: left;                      /* Keep text left-aligned */
+}
+
+ul.content-list li {
+    margin-bottom: 8px;                    /* Space between items */
+}
