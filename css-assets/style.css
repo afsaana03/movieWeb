@@ -85,7 +85,7 @@ ul.content-list li {
 
 .card img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 5%;
 }
 
 .card button {
@@ -103,9 +103,32 @@ ul.content-list li {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 37.5em) { /* 600px  (mobile) */
   .container {
-    grid-template-columns: 1fr; /* single column on mobile */
+    grid-template-columns: 1fr;
+  }
+  body {
+    background-color: pink;
+  }
+/*Navigation adjustment */ 
+  ul.nav {
+    flex-direction: column; /* Stack items */
+    align-items: stretch;
+  }
+  ul.nav li a {
+    text-align: center;
+    border-bottom: 0.0625rem solid #e0cfc1;
+  }
+  .card h2 {
+    font-size: 1rem; /* smaller title on mobile , relative units. Typography adjustment  */
+  }
+  .card p {
+    font-size: 0.875rem; /* smaller description */
+  }
+  .card button {
+    padding: 0.5rem 0.625rem; /* slightly smaller button */
+    font-size: 0.875rem;
   }
 }
+
 

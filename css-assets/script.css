@@ -1,179 +1,211 @@
-/* Overall page styling */
+/* CSS Reset 
+Strips away browser defaults.
+Ensures consistent styling across browsers. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Georgia', serif;       /* Sets the main font to Georgia, giving a slightly rustic, boho feel */
-    background-color: #fff8f0;     /* Warm cream background for a soft, welcoming page tone */
-    margin: 0;                          /* Remove default margin around the page */
-    padding: 0;                        /* Remove default padding */
-    color: #4b3f2f;              /* Dark brown text color for readability and boho aesthetic */
-    text-align: center;                 /* Center-align text content by default */
-    line-height: 1.6;              /* Increase line spacing for readability */
+    font-family: 'Georgia', serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+    color: #4b3f2f;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1rem; /* scalable */
 }
 
-/*Navigation menu styling */
+/* Navigation menu styling */
 .nav {
-    list-style-type: none;              /* Remove default bullet points for nav items */
-    margin: 0;                      /* Remove default margin */
-    padding: 0;                   /* Remove default padding */
-    background: linear-gradient(90deg, #d9c1b2, #f7e8d0); /* Soft horizontal gradient for nav background */
-    overflow: hidden;                     /* Prevent floating issues */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                   /* Flexbox for nav */
+    justify-content: center;
+    background: linear-gradient(90deg, #d9c1b2, #f7e8d0);
+    box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1);
 }
 
-ul.nav li {
-    display: inline-block;             /* Arrange nav items horizontally */
+.nav li {
+    margin: 0;
 }
 
-ul.nav li a {
-    display: block;                    /* Make anchor occupy entire list item for easier clicking */
-    color: #4b3f2f;                     /* Nav link text color */
-    text-decoration: none;          /* Remove underline from links */
-    padding: 14px 20px;                 /* Add spacing around text for clickable area */
-    font-weight: bold;                     /* Bold text for prominence */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+.nav li a {
+    display: block;
+    color: #4b3f2f;
+    text-decoration: none;
+    padding: 0.875rem 1.25rem;  /* rem instead of px */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-ul.nav li a:hover {
-    background-color: #f7d6aa;           /* Warm color on hover for visual feedback */
-    color: #fff;                          /* Change text to white on hover */
-    border-radius: 8px;                   /* Rounded corners for hovered link */
+.nav li a:hover {
+    background-color: #f7d6aa;
+    color: #fff;
+    border-radius: 0.5rem;
 }
 
-/* Headings styling */
+/* Headings */
 h1, h2, h3 {
-    margin: 20px 0;                       /* Add vertical spacing above and below headings */
-    color: #7b5e57;                       /* Earthy brown color for headings */
-    font-family: 'Palatino Linotype', serif; /* Secondary serif font for headings */
+    margin: 1.25rem 0;
+    color: #7b5e57;
+    font-family: 'Palatino Linotype', serif;
 }
 
-/* Paragraph styling */
+/* Paragraphs */
 p {
-    font-size: 18px;                      /* Slightly larger font for readability */
-    margin: 15px 0;                       /* Vertical spacing between paragraphs */
-    color: #4b3f2f;                       /* Match text color of body */
+    font-size: 1.125rem; /* ~18px */
+    margin: 0.9375rem 0;
+    color: #4b3f2f;
 }
 
-/*  Emphasis styling */
+/* Emphasis */
 strong {
-    color: #d9864a;                      /* Warm orange for highlighted text */
+    color: #d9864a;
 }
 
-/* Ordered lists for content  */
+/* Ordered lists */
 ol.content-list {
-    width: 80%;                           /* Limit width to 80% of container */
-    margin: 20px auto;                    /* Center the list horizontally with vertical spacing */
-    background-color: rgba(247,232,208,0.6); /* Light semi-transparent background */
-    padding: 20px;                        /* Inner spacing */
-    border-radius: 12px;                  /* Rounded corners for soft look */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Subtle shadow for depth */
-    display: table;                       /* Treat list as a block table to help with centering */
-    list-style-position: inside;           /* Numbers are part of text flow */
-    text-align: center;                    /* Center numbers and text */
+    width: 80%;
+    margin: 1.25rem auto;
+    background-color: rgba(247,232,208,0.6);
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.05);
+    list-style-position: inside;
+    text-align: center;
 }
 
 ol.content-list li {
-    margin-bottom: 10px;                  /* Space between list items */
+    margin-bottom: 0.625rem;
 }
 
-/* Unordered lists for content  */
+/* Unordered lists */
 ul.content-list {
-    display: block;                        /* Standard block display */
-    list-style-type: disc;                 /* Bullet points for unordered list */
-    padding-left: 40px;                    /* Indent bullets from left */
-    margin: 10px auto;                     /* Vertical spacing and centered block */
-    text-align: left;                      /* Keep text left-aligned */
+    list-style-type: disc;
+    padding-left: 2.5rem;
+    margin: 0.625rem auto;
+    text-align: left;
 }
 
 ul.content-list li {
-    margin-bottom: 8px;                    /* Space between items */
+    margin-bottom: 0.5rem;
 }
 
-/* Table styling */
+/* Tables */
 table {
-    margin: 20px auto;                     /* Center table with vertical spacing */
-    border-collapse: collapse;             /* Merge table borders */
-    width: 80%;                            /* Table width */
-    background-color: rgba(217,193,178,0.3); /* Light semi-transparent table background */
+    margin: 1.25rem auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(217,193,178,0.3);
 }
 
 th, td {
-    border: 1px solid #7b5e57;            /* Border around table cells */
-    padding: 10px;                         /* Space inside cells */
-    color: #4b3f2f;                        /* Text color */
+    border: 0.0625rem solid #7b5e57;
+    padding: 0.625rem;
+    color: #4b3f2f;
 }
 
 th {
-    background-color: #d9c1b2;            /* Slightly darker background for headers */
+    background-color: #d9c1b2;
 }
 
-/* Images styling */
+/* Images - responsive */
 img {
-    border-radius: 12px;                   /* Rounded corners for images */
-    margin: 10px 0;                        /* Vertical spacing around images */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    max-width: 100%;   /* Makes images scale down with container */
+    height: auto;      /* Keeps aspect ratio */
+    border-radius: 0.75rem;
+    margin: 0.625rem 0;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    display: block;    /* Prevents small gaps under images */
 }
 
-/* Figure captions */
+/* Captions */
 figcaption {
-    font-style: italic;                     /* Italic style for captions */
-    margin-top: 5px;                        /* Space above caption */
-    color: #7b5e57;                         /* Matching earthy color */
+    font-style: italic;
+    margin-top: 0.3125rem;
+    color: #7b5e57;
 }
 
-/* Container for content blocks */
-div.container {
-    width: 80%;                            /* Set content block width */
-    margin: 20px auto;                     /* Center block with vertical spacing */
-    background-color: rgba(247,232,208,0.6); /* Soft semi-transparent background */
-    padding: 20px;                         /* Inner spacing */
-    border-radius: 12px;                   /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Shadow for subtle depth */
+/* Content container */
+.container {
+    width: 80%;
+    margin: 1.25rem auto;
+    background-color: rgba(247,232,208,0.6);
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.05);
 }
 
-/*Form styling */
+/* Forms */
 form {
-    display: flex;                         /* Use flexbox for form layout */
-    flex-direction: column;                /* Arrange form elements vertically */
-    align-items: flex-start;               /* Align elements to left */
-    margin: 20px auto;                     /* Center form horizontally with spacing */
-    width: 80%;                            /* Form width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.25rem auto;
+    width: 80%;
 }
 
 input, textarea {
-    width: 100%;                            /* Full width of form container */
-    padding: 12px;                          /* Inner spacing for inputs */
-    margin-top: 5px;                        /* Space above input */
-    margin-bottom: 15px;                    /* Space below input */
-    border-radius: 8px;                     /* Rounded corners */
-    border: 1px solid #d9c1b2;             /* Border color matching theme */
-    background-color: #fff5ed;              /* Light background */
-    color: #4b3f2f;                         /* Input text color */
-    font-size: 16px;                        /* Slightly larger font */
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.3125rem 0 0.9375rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d9c1b2;
+    background-color: #fff5ed;
+    color: #4b3f2f;
+    font-size: 1rem;
 }
-::placeholder{
+
+::placeholder {
     text-align: center;
 }
 
 button {
-    padding: 12px 24px;                     /* Button padding */
-    background-color: #d9864a;              /* Warm orange button color */
-    color: #fff;                             /* White text on button */
-    border: none;                            /* Remove default border */
-    border-radius: 8px;                      /* Rounded corners */
-    cursor: pointer;                         /* Cursor shows clickable hand */
-    font-weight: bold;                        /* Bold text for emphasis */
-    transition: background-color 0.3s;       /* Smooth hover transition */
+    padding: 0.75rem 1.5rem;
+    background-color: #d9864a;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #f7d6aa;              /* Lighter hover color for button */
+    background-color: #f7d6aa;
 }
 
-/*Links styling */
+/* Links */
 a {
-    color: #d9864a;                         /* Main link color matching theme */
-    text-decoration: none;                  /* Remove underline by default */
+    color: #d9864a;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;             /* Underline on hover for visual cue */
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 37.5em) { /* 600px */
+    body {
+        background-color: pink;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav li a {
+        text-align: center;
+        border-bottom: 0.0625rem solid #e0cfc1;
+    }
+
+    .container {
+        width: 95%; /* Looser spacing on mobile */
+    }
 }
